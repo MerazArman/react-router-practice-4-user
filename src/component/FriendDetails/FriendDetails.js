@@ -13,7 +13,7 @@ const FriendDetails = () => {
         .then(res => res.json())
         .then(data => setFriendInformation(data))
         
-    },[])
+    },[id])
     const {name, email,phone, website} = friendInformation
     return (
         <div className="friend-box">

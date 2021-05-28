@@ -8,12 +8,16 @@ import {
 import Main from './component/Main/Main';
 import NotFound from './component/NotFound/NotFound';
 import FriendDetails from './component/FriendDetails/FriendDetails';
+import Header from './component/Header/Header';
+import Firebase from './component/Firebase/Firebase';
 
 
 function App() {
   return (
     <div >
       <Router>
+        <Header></Header>
+        <Firebase></Firebase>
         <Switch>
           <Route path="/main"> 
           <Main/>
